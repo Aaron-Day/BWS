@@ -64,6 +64,10 @@ nav ul {
   justify-content: space-between;
 }
 
+nav.tablet ul, nav.phone ul {
+  justify-content: center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -130,6 +134,67 @@ footer .container {
   width: 100%;
 }
 
-@media only screen and (max-width: 1024px) {
+/*DESKTOP*/
+@media only screen and (min-width: 1024px) {
+  .tablet {
+    display: none;
+  }
 
+  .phone {
+    display: none;
+  }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 470px) and (max-width: 1024px) {
+  .not-tablet {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+}
+
+/*PHONE*/
+@media only screen and (max-width: 470px) {
+  .not-phone {
+    display: none;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .content {
+    padding: 1rem 2rem;
+    font-size: 0.77rem;
+    top: 10rem;
+  }
+
+  .banner .content h2 {
+    font-size: 1rem;
+  }
+
+  .products {
+    justify-content: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .business-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  footer .container {
+    width: auto;
+  }
 }
