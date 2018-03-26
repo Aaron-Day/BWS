@@ -8,53 +8,69 @@
   <body>
     <!--HEADER-->
     <header>
-      <div class="logo">
+      <div class="logo container">
+        <img src="resources/images/logo.png"/>
+        <span>SECRET AGENT SUPPLY INC.</span>
       </div>
       <div class="banner">
-        <div class="content">
-          <span>NEW ARRIVAL</span>
-          <h2>SPORT BIKES AND MOTORCYCLES</h2>
+        <div class="container">
+          <div class="content">
+            <span>NEW ARRIVAL</span>
+            <h2>SPORT BIKES AND MOTORCYCLES</h2>
+          </div>
         </div>
       </div>
       <nav>
-        <span><a href="#">Eyewear</a></span>
-        <span><a href="#">Apparel</a></span>
-        <span><a href="#">Gadgets</a></span>
-        <span><a href="#">Vehicles</a></span>
-        <span><a href="#">Classes</a></span>
-        <span><a href="#">Contact</a></span>
+        <ul class="container">
+          <li><a href="#">Eyewear</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="#">Gadgets</a></li>
+          <li><a href="#">Vehicles</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <!--MAIN CONTENT-->
-    <div class="main-content">
+    <div class="main-content container">
       <div class="products">
-        <div class="box">
-          <img src="resources/images/pen.png"/>
+        <div class="product">
+          <div class="product-box">
+            <img src="resources/images/pen.png"/>
+          </div>
           <span class="content">Exploding Pen</span>
         </div>
-        <div class="box">
-          <img src="resources/images/watch.png"/>
+        <div class="product">
+          <div class="product-box">
+            <img src="resources/images/watch.png"/>
+          </div>
           <span class="content">Cellular Watch</span>
         </div>
-        <div class="box">
-          <img src="resources/images/glasses.png"/>
+        <div class="product">
+          <div class="product-box">
+            <img src="resources/images/glasses.png"/>
+          </div>
           <span class="content">Thermal Glasses</span>
         </div>
       </div>
-      <div class="store box">
-        <span class="content">Location</span>
-        <span>-47.346436, 84.32354</span>
-      </div>
-      <div class="store box">
-        <span class="content">Hours</span>
-        <span>0800 - 1800</span>
+      <div class="business-info">
+        <div class="info">
+          <span class="content">Location</span>
+          <span>-47.346436, 84.32354</span>
+        </div>
+        <div class="info">
+          <span class="content">Hours</span>
+          <span>0800 - 1800</span>
+        </div>
       </div>
     </div><!--MAIN CONTENT: CLOSE-->
 
     <!--FOOTER-->
     <footer>
-      <span id="copyright">Copyright Secret Agent Supply Inc.</span>
+      <div class="container">
+        <span id="copyright">Copyright Secret Agent Supply Inc.</span>
+      </div>
     </footer>
   </body>
 </html>
