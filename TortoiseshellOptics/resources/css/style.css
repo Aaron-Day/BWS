@@ -57,6 +57,9 @@ a {
 
 .flex {
   display: flex;
+}
+
+header .flex {
   justify-content: flex-end;
 }
 
@@ -69,4 +72,10 @@ a {
   margin-right: -2rem;
   color: black;
   background-color: white;
+}
+
+footer .flex {
+  padding: 4rem 3rem;
+  margin-top: 5rem;
+  background-color: azure;
 }
