@@ -2,15 +2,10 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
-  line-height: 1.4;
 }
 
-.banner {
-  height: 30rem;
-  background-image: url(../images/glasses-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+p {
+  line-height: 1.4;
 }
 
 .container {
@@ -18,20 +13,12 @@ html {
   margin: 0 auto;
 }
 
-#navbar {
-  height: 3rem;
-  padding: 0 1rem;
-  position: relative;
-  top: 1rem;
-  color: white;
-  background-color: cadetblue;
+.flex, .logo, .icon {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
+/**LOGO**/
 .logo {
-  display: flex;
   align-items: center;
 }
 
@@ -41,6 +28,7 @@ html {
   margin: 0 1rem;
 }
 
+/**NAVIGATION**/
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -55,12 +43,29 @@ a {
   text-decoration: none;
 }
 
-.flex {
-  display: flex;
-}
-
+/*HEADER*/
 header .flex {
   justify-content: flex-end;
+}
+
+#banner {
+  height: 30rem;
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#navbar {
+  height: 3rem;
+  padding: 0 1rem;
+  position: relative;
+  top: 1rem;
+  color: white;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #banner-content {
@@ -74,6 +79,55 @@ header .flex {
   background-color: white;
 }
 
+/*MAIN CONTENT*/
+#main-content .flex {
+  justify-content: center;
+}
+
+/**ICONS**/
+#icons {
+  margin-top: 3rem;
+}
+
+.icon {
+  height: 8rem;
+  width: 5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem;
+  text-align: center;
+}
+
+.icon-img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.icon-img img {
+  max-height: 5rem;
+  max-width: 5rem;
+}
+
+/*INFORMATION*/
+#information {
+  margin-top: 3rem;
+}
+
+.info {
+  margin: 0 2.5%;
+  width: 35%;
+}
+
+.title {
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+  background-color: cadetblue;
+}
+
+/*FOOTER*/
 footer .flex {
   padding: 4rem 3rem;
   margin-top: 5rem;

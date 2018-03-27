@@ -16,7 +16,7 @@ echo. >> BoilerplateProject/index.html
 echo 		^</header^> >> BoilerplateProject/index.html
 echo. >> BoilerplateProject/index.html
 echo 		^<!--MAIN CONTENT--^> >> BoilerplateProject/index.html
-echo 		^<div class="main-content"^> >> BoilerplateProject/index.html
+echo 		^<div id="main-content"^> >> BoilerplateProject/index.html
 echo. >> BoilerplateProject/index.html
 echo 		^</div^>^<!--MAIN CONTENT: CLOSE--^> >> BoilerplateProject/index.html
 echo. >> BoilerplateProject/index.html
