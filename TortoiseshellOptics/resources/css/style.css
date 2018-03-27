@@ -2,6 +2,7 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
+  min-width: 200px;
 }
 
 p {
@@ -25,13 +26,15 @@ p {
 .logo img {
   height: 1.5rem;
   width: auto;
-  margin: 0 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 
 /**NAVIGATION**/
 nav ul {
   display: flex;
   justify-content: flex-end;
+  padding-right: 1rem;
 }
 
 nav ul li {
@@ -58,7 +61,6 @@ header .flex {
 
 #navbar {
   height: 3rem;
-  padding: 0 1rem;
   position: relative;
   top: 1rem;
   color: white;
@@ -129,7 +131,135 @@ header .flex {
 
 /*FOOTER*/
 footer .flex {
-  padding: 4rem 3rem;
   margin-top: 5rem;
   background-color: azure;
+}
+
+footer .logo {
+  margin: 4rem 2rem;
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px) {
+  .tablet {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+  .not-tablet {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #banner {
+    height: 22rem;
+  }
+
+  #navbar {
+    top: 0;
+    width: auto;
+  }
+
+  #banner-content {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  footer .flex {
+    width: auto;
+  }
+}
+
+/*PHONE*/
+@media only screen and (max-width: 640px) {
+  .not-phone {
+    display: none;
+  }
+
+  p {
+    font-size: 0.77rem;
+  }
+
+  header .flex {
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  #navbar {
+    top: 0;
+  }
+
+  .logo img {
+    margin: 0 1rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  #banner-content {
+    width: 100%;
+    margin: 9rem 0 auto 0;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #icons {
+    margin-top: 3.77rem;
+    margin-bottom: -1.54rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    margin-bottom: 1.54rem;
+  }
+
+  #information {
+    margin-top: 3.77rem;
+    margin-bottom: -4rem;
+    flex-direction: column;
+  }
+
+  .title {
+    width: auto;
+    padding: 0.5 0;
+    text-align: center;
+  }
+
+  .info {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  footer .flex {
+    width: auto;
+    justify-content: center;
+  }
 }
